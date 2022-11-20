@@ -16,7 +16,7 @@ st.subheader("Welcome to Tweet Safely")
 st.image(tweetsafelylogo, width=300)
 st.title("A Mental Health MetroHack by Tom, Andrew, and Rafe")
 st.write("Made with the Co:here API and the Twitter API, to inspect the toxicity of a user for your mental health.")
-st.write("[Come watch our YouTube walkthrough >](https://google.com)")
+st.write("[Come watch our YouTube walkthrough >](https://www.youtube.com/watch?v=lhMKBONczx8)")
 
 #####
 # Input for username
