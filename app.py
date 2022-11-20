@@ -5,14 +5,15 @@ import cohere
 import newtwitter
 import os
 import altair as alt
-st.set_page_config(page_title="Tweet Safely", layout="wide")
+tweetsafelylogo = Image.open("tweetSafelyLogo.png")
+st.set_page_config(page_title="Tweet Safely", layout="wide", page_icon=st.image(tweetsafelylogo))
 
 headerlogo = Image.open("metrohackslogo.png")
 st.image(headerlogo)
 
 st.subheader("Welcome to Tweet Safely")
-tweetsafelylogo = Image.open("tweetSafelyLogo.png")
-st.image(tweetsafelylogo, width=100)
+
+st.image(tweetsafelylogo, width=300)
 st.title("A Mental Health MetroHack by Tom, Andrew, and Rafe")
 st.write("Made with the Co:here API and the Twitter API, to inspect the toxicity of a user for your mental health.")
 st.write("[Come watch our YouTube walkthrough >](https://google.com)")
