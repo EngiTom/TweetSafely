@@ -91,9 +91,9 @@ if len(username) > 0:
         #####
 
         toxicness = round(sum(percentages[0:2]), 2) 
-        if toxicness > 20:
+        if toxicness > 10:
             st.header('For your mental health, we recommend that you block this user.')
-        elif toxicness > 5:
+        elif toxicness > 2:
             st.header('According to our AI, this user is marginally toxic, feel free to ignore their tweets.')
         else:
             st.header('According to our AI, this user is not toxic, feel free to engage with their tweets.')
