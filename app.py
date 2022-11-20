@@ -6,7 +6,7 @@ import newtwitter
 import os
 import altair as alt
 tweetsafelylogo = Image.open("tweetSafelyLogo.png")
-st.set_page_config(page_title="Tweet Safely", layout="wide", page_icon=st.image(tweetsafelylogo))
+st.set_page_config(page_title="Tweet Safely", layout="wide", page_icon="tweetSafelyLogo.png")
 
 headerlogo = Image.open("metrohackslogo.png")
 st.image(headerlogo)
