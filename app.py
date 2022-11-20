@@ -87,7 +87,7 @@ if len(username) > 0:
         # Place pie graph of tweet categories
         #####
 
-        toxicness = sum(percentages[0:2]) 
+        toxicness = round(sum(percentages[0:2]), 2) 
         if toxicness > 20:
             st.header('For your mental health, we recommend that you block this user.')
         elif toxicness > 5:
