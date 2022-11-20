@@ -10,6 +10,8 @@ bearer_token = os.environ.get("BEARER_TOKEN")
 def create_url(username):
     # Replace with user ID below
     user_id = userLookup.finalFunc(username)
+    if user_id == "ERROR":
+        return "ERROR"
     #print(user_id)
     return "https://api.twitter.com/2/users/{}/tweets".format(user_id)
 
@@ -49,6 +51,8 @@ def connect_to_endpoint(url, params):
 
 def main(username):
     url = create_url(username)
+    if url == 'ERROR':
+        return "ERROR"
     params = get_params()
     json_response = connect_to_endpoint(url, params)
     if json_response == "ERROR":
