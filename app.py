@@ -11,6 +11,8 @@ headerlogo = Image.open("metrohackslogo.png")
 st.image(headerlogo)
 
 st.subheader("Welcome to Tweet Safely")
+tweetsafelylogo = Image.open("tweetSafelyLogo.png")
+st.image(tweetsafelylogo)
 st.title("A Mental Health MetroHack by Tom, Andrew, and Rafe")
 st.write("Made with the Co:here API and the Twitter API, to inspect the toxicity of a user for your mental health.")
 st.write("[Come watch our YouTube walkthrough >](https://google.com)")
