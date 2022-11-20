@@ -40,7 +40,7 @@ def finalFunc(nameOfUser):
     url = create_url(nameOfUser)
     json_response = connect_to_endpoint(url)
     #jsonResp=json.dumps(json_response, indent=4, sort_keys=True)
-    y = json.loads(json_response)
+    y = json_response
     d = y['data']
     zer = d[0]
     ret = zer['id']
